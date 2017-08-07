@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>DHT11 Test result</title>
+</head>
+<body>
+<table border>
+<tr>
+        <th>Year</th>
+        <th>Month</th>
+        <th>Day</th>
+        <th>Hour</th>
+        <th>Min</th>
+        <th>Humi</th>
+        <th>Temp</th>
+        
+</tr>
+{% for row in data %}
+<tr>
+        {% for col in row %}
+            <td>{{col}}</td>
+        {% endfor %}
+</tr>    
+{% endfor %}
+
+</table>
+</body>
+</html>
